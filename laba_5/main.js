@@ -8,7 +8,7 @@ class Massiv {
   }
   Read() {
     for (let i = 0; i < this.n; i++) {
-      this.arr[i] = Math.floor(Math.random() * 20 + 10);
+      this.arr[i] = (Math.random() * 20.6 + 10.7).toFixed(1);
     }
   }
   Write() {
@@ -20,7 +20,7 @@ class Massiv {
   UnaryOperation() {
     let sum = 0;
     for (let i = 0; i < this.n; i++) {
-      sum += this.arr[i];
+      sum += parseFloat(this.arr[i]);
     }
     document.getElementById("box1").innerHTML = "Сумма " + sum;
   }
