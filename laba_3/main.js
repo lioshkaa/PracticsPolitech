@@ -2,7 +2,6 @@
 для определения является ли четырехугольник параллелограммом. 
 Включите в проект обработку исключений.
 */
-
 class quadrangle {
   constructor(a, b, c, d) {
     this.a = a;
@@ -22,8 +21,8 @@ class quadrangle {
     }
     return isTetragon;
   }
-  isPallelogram() {
-    let isPr = "не является";
+  isPallelogram(isPr) {
+    isPr = "не является";
     if (this.a === this.c && this.b === this.d) {
       isPr = "является";
     }
@@ -39,8 +38,8 @@ try {
   let isTetragon = quadr.Tetragon();
   if (isTetragon == "можно") {
     console.log("Построить четырехугольник " + isTetragon);
-    let isPr = quadr.isPallelogram();
-    console.log("Параллелограмм " + isPr);
+    const isParallelogram = "";
+    console.log("Параллелограмм " + quadr.isPallelogram(isParallelogram));
   } else {
     console.log("Построить четырехугольник " + isTetragon);
   }
