@@ -6,8 +6,3 @@ let a=(y - (Math.sqrt(Math.abs(x))))*(x-Math.sin((x+y)));
 let b=Math.cos(((z*z)+(x*x)/4) * Math.PI / 180);
 console.log(b);
 console.log(a);
-
-
-
-
-
