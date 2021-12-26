@@ -74,7 +74,7 @@ class threeDimensionalVector extends Vector {
     }
   }
   lengthVector(arr) {
-    var count = arr.flat(Infinity).length;
+    let count = arr.flat(Infinity).length;
    document.getElementById("box1").innerHTML=count;
   }
 }
